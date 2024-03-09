@@ -1,0 +1,122 @@
+* {
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+html {
+  max-width: 100vw;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+
+  &.active {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 36px;
+}
+
+.container {
+  max-width: 1270px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  color: #f4f4f4;
+  transition: color 0.3s;
+  text-decoration: none;
+  color: var(--custom-button-color, #76b900);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.menu-item ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+.s-icon {
+  img,
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+}
+
+.how-btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  margin: 20px 0 0;
+}
+
+.how p {
+  text-align: center;
+}
+
+.how-copy {
+  margin: 10px auto 0;
+  display: flex;
+  justify-content: center;
+}
+
+.how-copy svg {
+  width: 30px;
+  height: 30px;
+}
+
+.success-message.hidden {
+  display: none;
+}
+
+section {
+  margin-bottom: 70px;
+}
