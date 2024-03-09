@@ -131,6 +131,22 @@ h2 {
   background: url("img/first.jpg") no-repeat center center/cover;
   padding-top: 20px;
   color: #f4f4f4;
+  position: relative;
+}
+
+.first:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.first .container {
+  position: relative;
+  z-index: 1000;
 }
 
 .first-btn {
@@ -214,6 +230,7 @@ section {
 .raydium-link img {
   max-width: 300px;
   height: auto;
+  margin-top: -30px;
 }
 
 .section-raydium {
@@ -230,4 +247,45 @@ section {
   color: #5a43ef;
   font-weight: 600;
   cursor: pointer;
+}
+
+.first-content-sticker {
+  max-width: 300px;
+}
+
+.sticker2-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: -10px 0 50px;
+}
+
+.sticker2 {
+  max-width: 250px;
+}
+
+.first-content-text {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.first-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 150px;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+@media (max-width: 500px) {
+  .first-content-wrapper {
+    margin-top: 80px;
+  }
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #5a43ef !important;
 }
