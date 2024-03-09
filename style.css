@@ -32,14 +32,14 @@ h6 {
 }
 
 .container {
-  max-width: 1270px;
+  max-width: 1140px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+  height: 100%;
 }
 
 a {
-  color: #f4f4f4;
   transition: color 0.3s;
   text-decoration: none;
   color: var(--custom-button-color, #76b900);
@@ -63,18 +63,42 @@ a {
   gap: 10px;
 }
 
+.menu-item a {
+  font-weight: 500;
+}
+
 .logo-text {
   font-size: 24px;
   font-weight: 700;
-  color: #333;
+  color: #f4f4f4;
+}
+
+.first-content h1,
+.first-content p {
+  color: #f4f4f4;
+}
+
+.first-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
 }
 
 .s-icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
   img,
   svg {
     width: 30px;
     height: 30px;
   }
+}
+
+.s-icon a {
+  max-height: 30px;
 }
 
 h2 {
@@ -86,20 +110,63 @@ h2 {
 
 .footer {
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 500px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.first {
+  max-height: 100vh;
+  height: 100%;
+  background: url("img/first.jpg") no-repeat center center/cover;
+  padding-top: 20px;
+  color: #f4f4f4;
+}
+
+.first-btn {
+  display: flex;
+  justify-content: center;
 }
 
 .how-btn {
-  display: block;
   margin: 0 auto;
   text-align: center;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #76b900;
+  color: #f4f4f4;
+
+  transition: all 0.3s;
 }
 
-header {
-  margin: 20px 0 0;
+.how-btn:hover {
+  background-color: #87d403;
 }
 
 .how p {
   text-align: center;
+  font-weight: 600;
+}
+
+.how-text {
+  font-weight: 400;
+  color: #5a43ef;
+}
+
+@media (max-width: 500px) {
+  .how-text {
+    font-size: 14px;
+  }
 }
 
 .how-copy {
@@ -118,5 +185,49 @@ header {
 }
 
 section {
-  margin-bottom: 70px;
+  margin-bottom: 90px;
+}
+
+.about-text {
+  margin: 0 auto;
+  max-width: 600px;
+  background: #f4f4f4;
+}
+
+.section-previous {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-previous img {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+}
+
+.section-previous p {
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+.raydium-link img {
+  max-width: 300px;
+  height: auto;
+}
+
+.section-raydium {
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.previous-wtf {
+  max-width: 220px !important;
+  margin-top: 20px;
+}
+
+.ticker {
+  color: #5a43ef;
+  font-weight: 600;
+  cursor: pointer;
 }
