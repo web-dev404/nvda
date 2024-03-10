@@ -144,6 +144,33 @@ h2 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.raydium-link img {
+  max-width: 300px;
+  min-height: 150px;
+  height: auto;
+  margin-top: -30px;
+}
+
+.section-buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+@media (max-width: 500px) {
+  .section-buy {
+    flex-direction: column;
+  }
+
+  .raydium-link img {
+    margin-top: -30px;
+  }
+  .raydium-link:last-child img {
+    margin-top: -80px;
+  }
+}
+
 .first .container {
   position: relative;
   z-index: 1000;
@@ -225,12 +252,6 @@ section {
 .section-previous p {
   margin: 20px 0;
   font-weight: 600;
-}
-
-.raydium-link img {
-  max-width: 300px;
-  height: auto;
-  margin-top: -30px;
 }
 
 .section-raydium {
